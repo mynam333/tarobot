@@ -32,6 +32,6 @@ async def on_message(message):
         await client.send_message(message.channel, "<@"+id+">님의 오늘의 운세입니다.")
         await client.send_message(message.channel, random.choice(messages))
         
-
+client.login(process.env.bot_token)
 
 client.run(token)
