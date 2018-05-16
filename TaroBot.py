@@ -6,7 +6,7 @@ client = discord.Client()
 
 # 1-6에서 생성된 토큰을 이곳에 입력해주세요.
 token = "NDQ2MjcwNTk4NTE2MzEwMDE3.Dd2mxw.G1OvwFgktdxKuQut24P-2P-lGJs"
-bot_token = "NDQ2MjcwNTk4NTE2MzEwMDE3.Dd2mxw.G1OvwFgktdxKuQut24P-2P-lGJs"
+
 
 # 봇이 구동되었을 때 동작되는 코드입니다.
 @client.event
@@ -33,6 +33,5 @@ async def on_message(message):
         await client.send_message(message.channel, "<@"+id+">님의 오늘의 운세입니다.")
         await client.send_message(message.channel, random.choice(messages))
         
-client.login(process.env.bot_token)
 
 client.run(token)
