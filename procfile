@@ -1,0 +1,4 @@
+<process type>: <web>
+web: gunicorn mysite.wsgi --log-file -
+<process type>: <worker>
+worker: gunicorn mysite.wsgi --log-file -
