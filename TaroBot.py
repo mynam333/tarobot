@@ -8,13 +8,6 @@ client = discord.Client()
 # 1-6에서 생성된 토큰을 이곳에 입력해주세요.
 token = "NDQ2MjcwNTk4NTE2MzEwMDE3.Dd2mxw.G1OvwFgktdxKuQut24P-2P-lGJs"
 
-logging.basicConfig(level=logging.INFO)
-client = discord.Client()
-mysql_username = "root"
-mysql_password = "th6k5gfdkgf54"
-mysql_hostname = "db_inventory"
-mysql_db_name = "inventory"
-discord_pass = None
 
 # 봇이 구동되었을 때 동작되는 코드입니다.
 @client.event
