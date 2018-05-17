@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix)
 
 
 # 봇이 구동되었을 때 동작되는 코드입니다.
-@bot.event
+@client.event
 async def on_ready():
     print("Logged in as ") #화면에 봇의 아이디, 닉네임이 출력됩니다.
     print(client.user.name)
@@ -24,7 +24,7 @@ async def on_ready():
     await client.change_presence(game=discord.Game(name="!타로", type=1))
 
 # 봇이 새로운 메시지를 수신했을때 동작되는 코드입니다.
-@bot.event
+@client.event
 async def on_message(message):
     if message.author.bot: #만약 메시지를 보낸사람이 봇일 경우에는
         return None #동작하지 않고 무시합니다.
@@ -38,4 +38,4 @@ async def on_message(message):
         await client.send_message(message.channel, random.choice(messages))
         
 
-bot.run(token)
+client.run(token)
