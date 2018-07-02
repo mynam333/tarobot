@@ -1,3 +1,3 @@
 <?php 
-exec('tarobot/tarobot.py')
+exec('tarobot.py')
 ?>
