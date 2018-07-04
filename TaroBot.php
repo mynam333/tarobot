@@ -1,4 +1,3 @@
-<?php ;
-$python = `TaroBot.py`;
-echo $python;
+<?php 
+exec('tarobot/TaroBot.py')
 ?>
