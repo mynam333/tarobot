@@ -1,6 +1,7 @@
 #!/usr/local/bin/python
 # coding:utf-8
 
+import os
 import asyncio
 import discord
 import random
