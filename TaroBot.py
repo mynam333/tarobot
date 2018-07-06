@@ -33,12 +33,12 @@ async def on_message(message):
         messages = ["The Fool (광대, 바보) 정방향. 『모험, 무지(無知)』", "The Fool (광대, 바보) 역방향. 『경솔, 어리석음』", "The Magician (마술사, 마법사, 기술사) 정방향. 『창조, 수완』", "The Magician (마술사, 마법사, 기술사) 역방향. 『겁많음, 기만』", "The High Priestess (여교황) 정방향. 『지식, 총명』", "The High Priestess (여교황) 역방향. 『잔혹, 무례함』", "The Empress (여제, 여황제) 정방향. 『풍양, 모성』", "The Empress (여제, 여황제) 역방향. 『과잉, 허영』", "The Emperor (황제) 정방향. 『책임, 부성(父性)』", "The Emperor (황제) 역방향. 『오만, 존대』", "The Hierophant (교황) 정방향. 『가르침, 관대함』", "The Hierophant (교황) 역방향. 『협량, 나태』", "The Lovers (연인, 연애) 정방향. 『연애, 쾌락』", "The Lovers (연인, 연애) 역방향. 『질투, 배신』", "The Chariot (전차, 정복자) 정방향. 『전진, 승리』", "The Chariot (전차, 정복자) 역방향. 『폭주, 좌절』", "Strength (힘) 정방향. 『힘, 용기』", "Strength (힘) 역방향. 『본성, 자만』", "The Hermit (은둔자) 정방향. 『탐색, 사려깊음』", "The Hermit (은둔자) 역방향. 『음습, 폐쇄적, 탐욕』", "Wheel of Fortune (운명의 수레바퀴, 운명) 정방향. 『기회, 일시적인 행운』", "Wheel of Fortune (운명의 수레바퀴, 운명) 역방향. 『오산, 불운』", "Justice (정의, 재판의 여신) 정방향. 『균형, 정당함』", "Justice (정의, 재판의 여신) 역방향. 『편견, 부정』", "The Hanged Man (매달린 사람, 매달린 남자) 정방향. 『자기희생, 인내』", "The Hanged Man (매달린 사람, 매달린 남자) 역방향. 『무의미한 희생, 맹목』", "Death (죽음, 사신) 정방향. 『격변, 이별』", "Death (죽음, 사신) 역방향. 『변화의 유보, 고착』", "Temperance (절제) 정방향. 『조화, 견실』", "Temperance (절제) 역방향. 『낭비, 불안정』", "The Devil (악마) 정방향. 『사심, 속박, 타락』", "The Devil (악마) 역방향. 『악순환으로부터의 각성』", "The Tower (탑, 신의 집) 정방향. 『파괴, 파멸』", "The Tower (탑, 신의 집) 역방향. 『필요로 하는 파괴』", "The Star (별) 정방향. 『희망, 동경』", "The Star (별) 역방향. 『환멸, 비애』", "The Moon (달) 정방향. 『불안, 애매함, 혼돈』", "The Moon (달) 역방향. 『불안 해소, 명료함, 혼돈의 끝』", "The Sun (태양) 정방향. 『밝은 미래, 만족』", "The Sun (태양) 역방향. 『연기(延期), 실패』", "Judgement (심판, 영겁) 정방향. 『부활, 개선』", "Judgement (심판, 영겁) 역방향. 『재기불능, 후회』", "The World (세계, 우주) 정방향. 『완성, 완전』", "The World (세계, 우주) 역방향. 『미완성, 어중간함』"]
         await client.send_message(message.channel, "<@"+id+">님의 오늘의 운세입니다.")
         await client.send_message(message.channel, random.choice(messages))
-        @commands.cooldown(1, 30, commands.BucketType.user)
+        
 
         
 
 
-    if message.content.startswith('!점괘'):
+    elif message.content.startswith('!점괘'):
         messages = ["대길(大吉). 오늘 당신의 앞날에는 행운이 가득할겁니다.","길(吉). 오늘 당신에게 좋은 일이 계속 생길 것 같네요.","중길(中吉). 오늘 당신의 앞날은 창창합니다.","소길(小吉). 오늘은 작은 행운이 당신을 지켜줄듯 합니다..","반길(半吉). 오늘 작은 행운조각이 당신을 따라다닐것 같습니다.","말길(末吉). 오늘 행운의 끝자락이 당신에게 닿았습니다.","말소길(末小吉). 오늘 행운의 끝자락이 당신을 스쳐지나갑니다.","평(平). 오늘은 평범한 하루입니다. 행운과 불행이 당신을 덮치는군요.","흉(凶). 좋지 않습니다. 오늘 당신에게 무언가 좋지 않은 일 조금 생길지도 모르겠네요.","소흉(小凶). 오늘은 무언가 되지 않는 날이네요. 작은 실수들이 당신을 괴롭힙니다.","반흉(半凶). 오늘 작은 불행이 당신을 따라다닐것입니다.","말흉(末凶). 오늘 큰 불행이 당신을 따라다니며 괴롭힐 것입니다.","대흉(大凶). 펌블! 끔찍하군요. 오늘 당신의 하루는 최악으로 예견됩니다."]
         await client.send_message(message.channel, "<@"+id+">님의 오늘의 점괘입니다.")
         await client.send_message(message.channel, random.choice(messages))
