@@ -4,7 +4,6 @@
 import asyncio
 import discord
 import random
-import cooldown
 
 client = discord.Client()
 
