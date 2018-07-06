@@ -4,6 +4,7 @@
 import asyncio
 import discord
 import random
+import commands
 
 client = discord.Client()
 
