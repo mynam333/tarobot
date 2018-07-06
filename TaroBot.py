@@ -50,8 +50,7 @@ async def on_message(message):
         await client.send_message(message.channel, random.choice(messages))
 
 
-@client.event
-async def on_message(message):
+@commands.cooldown(1, 0, commands.BucketType.user)
 
     elif message.content.startswith('!목록'):
         embed=discord.Embed(title="운세봇 명령어 목록입니다.", description="!타로 (오늘의 운세를 타로카드로 알아봅니다.)\n!점괘 (오늘의 운세를 오미쿠지로 알아봅니다.)", color=0x0000ff)
