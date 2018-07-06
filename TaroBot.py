@@ -4,8 +4,7 @@
 import asyncio
 import discord
 import random
-import subprocess
-import command
+import commands
 
 client = discord.Client()
 
