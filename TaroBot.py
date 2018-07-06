@@ -22,7 +22,7 @@ async def on_ready():
     await client.change_presence(game=discord.Game(name="!목록", type=1))
 
 # 봇이 새로운 메시지를 수신했을때 동작되는 코드입니다.
-@client.event
+@client.command(pass_context=True)
 @commands.cooldown(1, 43200, commands.BucketType.user)
 async def on_message(message):
 
