@@ -23,7 +23,6 @@ async def on_ready():
 
 # 봇이 새로운 메시지를 수신했을때 동작되는 코드입니다.
 @client.event
-@commands.cooldown(1, 43200, commands.BucketType.user)
 async def on_message(message):
 
     id = message.author.id #id라는 변수에는 메시지를 보낸사람의 ID를 담습니다.
