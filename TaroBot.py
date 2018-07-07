@@ -66,6 +66,25 @@ async def on_message(message):
          em.set_image(url="https://i.imgur.com/meNrCJJ.gif")
          await client.send_message(message.channel, embed=em)
     
+                
+    elif message.content.startswith('!삐짐'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/KBrCfCh.png")
+         await client.send_message(message.channel, embed=em)
+            
+            
+    elif message.content.startswith('!풋'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/E3M1g3r.png")
+         await client.send_message(message.channel, embed=em)
+            
+                        
+    elif message.content.startswith('!디제잉'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/En9Eidk.gif")
+         await client.send_message(message.channel, embed=em)
+            
+            
             
             
 client.run(token)
