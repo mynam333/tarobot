@@ -61,7 +61,7 @@ async def on_message(message):
     
     
     elif message.content.startswith('!실험'):
-         await client.send_file(message.channel, "https://i.imgur.com/" + str(int(meNrCJJ[1])) + ".gif")
+         await client.send_file(message.channel, "https://i.imgur.com/" + meNrCJJ + ".gif")
 
 client.run(token)
 
