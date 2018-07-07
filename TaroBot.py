@@ -63,6 +63,7 @@ async def on_message(message):
     
     elif message.content.startswith('!실험'):
          discord.Embed.set_image(url="https://i.imgur.com/meNrCJJ.gif?1")
+         client.send_message(message.channel, Image)
 
 client.run(token)
 
