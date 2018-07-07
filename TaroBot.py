@@ -60,8 +60,8 @@ async def on_message(message):
     # 이하 디시거미콘
     
     
-    elif message.content.startswith('!'):
-         await client.send_file(message.channel, "https://i.imgur.com/" + str(int(msg1[1])) + "meNrCJJ.gif?1")
+    elif message.content.startswith('!실험'):
+         await client.send_file(message.channel, "https://i.imgur.com/" + str(int(meNrCJJ[1])) + ".gif")
 
 client.run(token)
 
