@@ -55,7 +55,13 @@ async def on_message(message):
          embed=discord.Embed(title="운세봇 명령어 목록입니다.", description="!타로 (오늘의 운세를 타로카드로 알아봅니다.)\n!점괘 (오늘의 운세를 오미쿠지로 알아봅니다.)", color=0x0000ff)
          embed.set_footer(text="Made by 유아루")
          await client.send_message(message.channel, embed=embed)
-            
+    
+    
+    # 이하 디시거미콘
+    
+    
+    elif message.content.startswith('!'):
+         await client.send_file(message.channel, "https://i.imgur.com/" + str(int(msg1[1])) + "meNrCJJ.gif?1")
 
 client.run(token)
 
