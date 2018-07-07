@@ -61,31 +61,78 @@ async def on_message(message):
     
     
     
-    elif message.content.startswith('!야호'):
+    elif message.content.startswith(';야호'):
          em = discord.Embed()
-         em.set_image(url="https://i.imgur.com/meNrCJJ.gif")
+         em.set_image(url="https://i.imgur.com/xXk8nVo.gif")
          await client.send_message(message.channel, embed=em)
     
                 
-    elif message.content.startswith('!삐짐'):
+    elif message.content.startswith(';삐짐'):
          em = discord.Embed()
-         em.set_image(url="https://i.imgur.com/KBrCfCh.png")
+         em.set_image(url="https://i.imgur.com/64vOuO4.png")
          await client.send_message(message.channel, embed=em)
             
             
-    elif message.content.startswith('!풋'):
+    elif message.content.startswith(';풋'):
          em = discord.Embed()
-         em.set_image(url="https://i.imgur.com/E3M1g3r.png")
+         em.set_image(url="https://i.imgur.com/kQxjrQo.png")
          await client.send_message(message.channel, embed=em)
             
                         
-    elif message.content.startswith('!디제잉'):
+    elif message.content.startswith(';디제잉'):
          em = discord.Embed()
-         em.set_image(url="https://i.imgur.com/En9Eidk.gif")
+         em.set_image(url="https://i.imgur.com/QX50q2M.gif")
          await client.send_message(message.channel, embed=em)
             
+                                   
+    elif message.content.startswith(';좌절'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/zzjWOiL.png")
+         await client.send_message(message.channel, embed=em)
             
+                                               
+    elif message.content.startswith(';빡종'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/cEoTjwN.png")
+         await client.send_message(message.channel, embed=em)
             
+                                               
+    elif message.content.startswith(';데헷'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/SWks24n.gif")
+         await client.send_message(message.channel, embed=em)
+            
+                                               
+    elif message.content.startswith(';유령'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/Zacahw7.png")
+         await client.send_message(message.channel, embed=em)
+            
+                                               
+    elif message.content.startswith(';공포'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/m1nNkrx.png")
+         await client.send_message(message.channel, embed=em)
+            
+                                               
+    elif message.content.startswith(';이불'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/e8ziPto.png")
+         await client.send_message(message.channel, embed=em)
+            
+                                               
+    elif message.content.startswith(';우마루'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/Sxm55U6.gif")
+         await client.send_message(message.channel, embed=em)
+            
+                                   
+    elif message.content.startswith(';경례'):
+         em = discord.Embed()
+         em.set_image(url="https://i.imgur.com/lyrRk10.png")
+         await client.send_message(message.channel, embed=em)
+            
+
             
 client.run(token)
 
