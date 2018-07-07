@@ -714,7 +714,7 @@ async def on_message(message):
     elif message.content.startswith(';목록'):
          await client.send_message(message.channel, "거미콘 명령어 목록입니다.")
          embed=discord.Embed(title=";야호", description="https://i.imgur.com/xXk8nVo.gif")
-         discord.Embed.add_field(title=";삐짐", description="https://i.imgur.com/64vOuO4.png")
+         discord.Embed.add_field(name=";삐짐", value="https://i.imgur.com/64vOuO4.png")
          embed.set_footer(text="Made by 유아루")
          await client.send_message(message.channel, embed=embed)
          
