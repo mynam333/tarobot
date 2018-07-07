@@ -60,10 +60,9 @@ async def on_message(message):
     # 이하 디시거미콘
     
     
-    e = discord.Embed()
     
     elif message.content.startswith('!실험'):
-         e.set_image(url="https://i.imgur.com/meNrCJJ.gif?1")
+         discord.Embed.set_image(url="https://i.imgur.com/meNrCJJ.gif?1")
 
 client.run(token)
 
