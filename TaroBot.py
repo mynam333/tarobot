@@ -63,7 +63,7 @@ async def on_message(message):
     
     elif message.content.startswith('!야호'):
          em = discord.Embed()
-         em.set_image(url="https://i.imgur.com/meNrCJJ.gif?1")
+         em.set_image(url="https://i.imgur.com/meNrCJJ.gif")
          await client.send_message(message.channel, embed=em)
     
             
