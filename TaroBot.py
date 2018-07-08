@@ -737,7 +737,7 @@ async def on_message(message):
          embed.add_field(name=";눈빔", value="https://i.imgur.com/0F2CEaK.png")
          embed.add_field(name=";?", value="https://i.imgur.com/MmKffzi.png")
          embed.add_field(name=";뒤적", value="https://i.imgur.com/zaoyKEq.png")
-         embed.add_field(name=";좆까", value=""https://i.imgur.com/jt7EdcH.png")
+         embed.add_field(name=";좆까", value="https://i.imgur.com/jt7EdcH.png")
          embed.add_field(name=";혼란", value="https://i.imgur.com/Z8KDEWA.png")
          embed.add_field(name=";대신", value="https://i.imgur.com/e0I15eD.png")
          embed.add_field(name=";엠창인생", value="https://i.imgur.com/sfrk72H.png")
