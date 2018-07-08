@@ -700,7 +700,11 @@ async def on_message(message):
             
          
     elif message.content.startswith(';목록'):
-         embed=discord.Embed(title="`★거미콘 명령어 목록입니다.`", color=0xffff00)
+         await client.send_message(message.channel, "목록은 총 4페이지입니다. ;목록1~4 중 하나를 선택해주세요.")
+         
+        
+    elif message.content.startswith(';목록1'):
+         embed=discord.Embed(title="`★거미콘 명령어 목록 1페이지입니다.`", color=0xffff00)
          embed.add_field(name=";야호", value="https://i.imgur.com/xXk8nVo.gif")
          embed.add_field(name=";삐짐", value="https://i.imgur.com/64vOuO4.png")
          embed.add_field(name=";풋, ;훗", value="https://i.imgur.com/kQxjrQo.png")
@@ -726,6 +730,12 @@ async def on_message(message):
          embed.add_field(name=";갑분싸", value="https://i.imgur.com/L4JtAWo.png")
          embed.add_field(name=";충성", value="https://i.imgur.com/2Ev5w2f.png")
          embed.add_field(name=";울먹", value="https://i.imgur.com/AQmIzxk.png")
+         embed.set_footer(text="Made by 유아루")
+         await client.send_message(message.channel, embed=embed)
+        
+        
+    elif message.content.startswith(';목록2'):
+         embed=discord.Embed(title="`★거미콘 명령어 목록 2페이지입니다.`", color=0xffff00)
          embed.add_field(name=";부끄", value="https://i.imgur.com/s7SaOnG.png")
          embed.add_field(name=";오와콘", value="https://i.imgur.com/MBlLJ8v.png")
          embed.add_field(name=";눈물", value="https://i.imgur.com/EgRU44E.png")
@@ -751,6 +761,12 @@ async def on_message(message):
          embed.add_field(name=";한숨, ;에휴", value="https://i.imgur.com/fZ6JRhl.png")
          embed.add_field(name=";친구비", value="https://i.imgur.com/SBRB8Lq.png")
          embed.add_field(name=";발그레", value="https://i.imgur.com/KzLeTh9.png")
+         embed.set_footer(text="Made by 유아루")
+         await client.send_message(message.channel, embed=embed)
+        
+        
+    elif message.content.startswith(';목록3'):
+         embed=discord.Embed(title="`★거미콘 명령어 목록 3페이지입니다.`", color=0xffff00)
          embed.add_field(name=";자살", value="https://i.imgur.com/BBnFGvh.png")
          embed.add_field(name=";훌쩍", value="https://i.imgur.com/YZkpqLa.png")
          embed.add_field(name=";쿠궁", value="https://i.imgur.com/BoHgLR7.png")
@@ -776,6 +792,12 @@ async def on_message(message):
          embed.add_field(name=";빡침", value="https://i.imgur.com/5HCppyD.png")
          embed.add_field(name=";지랄, ;ㅈㄹ", value="https://i.imgur.com/A7HG6Sf.png")
          embed.add_field(name=";레알, ;ㄹㅇ", value="https://i.imgur.com/8CmRp3H.png")
+         embed.set_footer(text="Made by 유아루")
+         await client.send_message(message.channel, embed=embed)
+        
+        
+    elif message.content.startswith(';목록4'):
+         embed=discord.Embed(title="`★거미콘 명령어 목록 4페이지입니다.`", color=0xffff00)
          embed.add_field(name=";빼액", value="https://i.imgur.com/wi6UwCn.png")
          embed.add_field(name=";?!", value="https://i.imgur.com/dvH1YFY.png")
          embed.add_field(name=";팝콘, ;팝그작", value="https://i.imgur.com/XwVApTH.png")
