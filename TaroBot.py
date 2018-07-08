@@ -700,10 +700,10 @@ async def on_message(message):
             
          
     elif message.content.startswith(';목록'):
-         await client.send_message(message.channel, "목록은 총 4페이지입니다. ;목록1~4 중 하나를 선택해주세요.")
+         await client.send_message(message.channel, "목록은 총 4페이지입니다. ;목1~4 중 하나를 선택해주세요.")
          
         
-    elif message.content.startswith(';목록1'):
+    elif message.content.startswith(';목1'):
          embed=discord.Embed(title="`★거미콘 명령어 목록 1페이지입니다.`", color=0xffff00)
          embed.add_field(name=";야호", value="https://i.imgur.com/xXk8nVo.gif")
          embed.add_field(name=";삐짐", value="https://i.imgur.com/64vOuO4.png")
@@ -734,7 +734,7 @@ async def on_message(message):
          await client.send_message(message.channel, embed=embed)
         
         
-    elif message.content.startswith(';목록2'):
+    elif message.content.startswith(';목2'):
          embed=discord.Embed(title="`★거미콘 명령어 목록 2페이지입니다.`", color=0xffff00)
          embed.add_field(name=";부끄", value="https://i.imgur.com/s7SaOnG.png")
          embed.add_field(name=";오와콘", value="https://i.imgur.com/MBlLJ8v.png")
@@ -765,7 +765,7 @@ async def on_message(message):
          await client.send_message(message.channel, embed=embed)
         
         
-    elif message.content.startswith(';목록3'):
+    elif message.content.startswith(';목3'):
          embed=discord.Embed(title="`★거미콘 명령어 목록 3페이지입니다.`", color=0xffff00)
          embed.add_field(name=";자살", value="https://i.imgur.com/BBnFGvh.png")
          embed.add_field(name=";훌쩍", value="https://i.imgur.com/YZkpqLa.png")
@@ -796,7 +796,7 @@ async def on_message(message):
          await client.send_message(message.channel, embed=embed)
         
         
-    elif message.content.startswith(';목록4'):
+    elif message.content.startswith(';목4'):
          embed=discord.Embed(title="`★거미콘 명령어 목록 4페이지입니다.`", color=0xffff00)
          embed.add_field(name=";빼액", value="https://i.imgur.com/wi6UwCn.png")
          embed.add_field(name=";?!", value="https://i.imgur.com/dvH1YFY.png")
