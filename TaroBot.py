@@ -60,9 +60,15 @@ async def on_message(message):
     # 이하 디시거미콘
     
     
+    NONSENSE_LIMIT = 1
+    
     
     elif message.content.startswith(';야호'):
          em = discord.Embed()
+         async for log in client.logs_from(message.channel, limit=1):            
+             if log.author == message.author:
+                 await client.delete_message(log)
+         await client.send_message(message.channel, "<@"+id+">")
          em.set_image(url="https://i.imgur.com/xXk8nVo.gif")
          await client.send_message(message.channel, embed=em)
     
