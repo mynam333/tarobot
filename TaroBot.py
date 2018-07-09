@@ -66,7 +66,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [야호]하셨습니다.")
          em.set_image(url="https://i.imgur.com/xXk8nVo.gif")
          await client.send_message(message.channel, embed=em)
     
@@ -76,7 +76,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [삐짐]하셨습니다.")
          em.set_image(url="https://i.imgur.com/64vOuO4.png")
          await client.send_message(message.channel, embed=em)
             
@@ -86,13 +86,17 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [풋]하셨습니다.")
          em.set_image(url="https://i.imgur.com/kQxjrQo.png")
          await client.send_message(message.channel, embed=em)
             
                                                
     elif message.content.startswith(';훗'):
          em = discord.Embed()
+         async for log in client.logs_from(message.channel, limit=1):            
+             if log.author == message.author:
+                 await client.delete_message(log)
+         await client.send_message(message.channel, "<@"+id+">님이 [훗]하셨습니다.")
          em.set_image(url="https://i.imgur.com/kQxjrQo.png")
          await client.send_message(message.channel, embed=em)
             
@@ -102,7 +106,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [디제잉]하셨습니다.")
          em.set_image(url="https://i.imgur.com/QX50q2M.gif")
          await client.send_message(message.channel, embed=em)
             
@@ -112,7 +116,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [좌절]하셨습니다.")
          em.set_image(url="https://i.imgur.com/zzjWOiL.png")
          await client.send_message(message.channel, embed=em)
             
@@ -122,7 +126,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [빡종]하셨습니다.")
          em.set_image(url="https://i.imgur.com/cEoTjwN.png")
          await client.send_message(message.channel, embed=em)
             
@@ -132,7 +136,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [데헷]하셨습니다.")
          em.set_image(url="https://i.imgur.com/SWks24n.gif")
          await client.send_message(message.channel, embed=em)
             
@@ -142,7 +146,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [유령]하셨습니다.")
          em.set_image(url="https://i.imgur.com/Zacahw7.png")
          await client.send_message(message.channel, embed=em)
             
@@ -152,7 +156,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [이불]하셨습니다.")
          em.set_image(url="https://i.imgur.com/e8ziPto.png")
          await client.send_message(message.channel, embed=em)
             
@@ -162,7 +166,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [우마루]하셨습니다.")
          em.set_image(url="https://i.imgur.com/Sxm55U6.gif")
          await client.send_message(message.channel, embed=em)
             
@@ -172,7 +176,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [경례]하셨습니다.")
          em.set_image(url="https://i.imgur.com/lyrRk10.png")
          await client.send_message(message.channel, embed=em)
             
@@ -182,7 +186,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [힐끔]하셨습니다.")
          em.set_image(url="https://i.imgur.com/tUYvhqz.gif")
          await client.send_message(message.channel, embed=em)
             
@@ -192,7 +196,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [선글라스]하셨습니다.")
          em.set_image(url="https://i.imgur.com/u9XNV2M.gif")
          await client.send_message(message.channel, embed=em)
             
@@ -202,7 +206,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")
+         await client.send_message(message.channel, "<@"+id+">님이 [커피]하셨습니다.")
          em.set_image(url="https://i.imgur.com/5JCZONu.png")
          await client.send_message(message.channel, embed=em)
             
@@ -212,7 +216,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")            
+         await client.send_message(message.channel, "<@"+id+">님이 [히익]하셨습니다.")
          em.set_image(url="https://i.imgur.com/FtRx5x3.png")
          await client.send_message(message.channel, embed=em)
             
@@ -222,7 +226,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")            
+         await client.send_message(message.channel, "<@"+id+">님이 [메롱]하셨습니다.")
          em.set_image(url="https://i.imgur.com/G92wTAI.gif")
          await client.send_message(message.channel, embed=em)
             
@@ -232,7 +236,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [밥상]하셨습니다.")
          em.set_image(url="https://i.imgur.com/AdrQFFi.png")
          await client.send_message(message.channel, embed=em)
             
@@ -242,7 +246,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [총]하셨습니다.")
          em.set_image(url="https://i.imgur.com/Qkc1h5B.gif")
          await client.send_message(message.channel, embed=em)
             
@@ -252,7 +256,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [고인]하셨습니다.")
          em.set_image(url="https://i.imgur.com/wxLreLP.gif")
          await client.send_message(message.channel, embed=em)
             
@@ -262,7 +266,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [사형]하셨습니다.")
          em.set_image(url="https://i.imgur.com/2nryb2B.png")
          await client.send_message(message.channel, embed=em)
             
@@ -272,8 +276,18 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [칭찬]하셨습니다.")
          em.set_image(url="https://i.imgur.com/ZIJBzn3.png")
+         await client.send_message(message.channel, embed=em)
+            
+            
+    elif message.content.startswith(';레알?'):
+         em = discord.Embed()
+         async for log in client.logs_from(message.channel, limit=1):            
+             if log.author == message.author:
+                 await client.delete_message(log)
+         await client.send_message(message.channel, "<@"+id+">님이 [레알?]하셨습니다.")
+         em.set_image(url="https://i.imgur.com/0JzK9VP.png")
          await client.send_message(message.channel, embed=em)
             
                                    
@@ -282,7 +296,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㄹㅇ?]하셨습니다.")
          em.set_image(url="https://i.imgur.com/0JzK9VP.png")
          await client.send_message(message.channel, embed=em)
             
@@ -292,7 +306,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [갑분싸]하셨습니다.")
          em.set_image(url="https://i.imgur.com/L4JtAWo.png")
          await client.send_message(message.channel, embed=em)
             
@@ -302,7 +316,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [충성]하셨습니다.")
          em.set_image(url="https://i.imgur.com/2Ev5w2f.png")
          await client.send_message(message.channel, embed=em)
             
@@ -312,7 +326,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [울먹]하셨습니다.")
          em.set_image(url="https://i.imgur.com/AQmIzxk.png")
          await client.send_message(message.channel, embed=em)
             
@@ -322,7 +336,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [부끄]하셨습니다.")
          em.set_image(url="https://i.imgur.com/s7SaOnG.png")
          await client.send_message(message.channel, embed=em)
             
@@ -332,7 +346,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [오와콘]하셨습니다.")
          em.set_image(url="https://i.imgur.com/MBlLJ8v.png")
          await client.send_message(message.channel, embed=em)
             
@@ -342,7 +356,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [눈물]하셨습니다.")
          em.set_image(url="https://i.imgur.com/EgRU44E.png")
          await client.send_message(message.channel, embed=em)
             
@@ -352,7 +366,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [스고이]하셨습니다.")
          em.set_image(url="https://i.imgur.com/TOG8qKf.png")
          await client.send_message(message.channel, embed=em)
             
@@ -362,7 +376,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [쾅쾅]하셨습니다.")
          em.set_image(url="https://i.imgur.com/YbAFnyb.png")
          await client.send_message(message.channel, embed=em)
             
@@ -372,7 +386,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [빼액]하셨습니다.")
          em.set_image(url="https://i.imgur.com/2EBwi9n.png")
          await client.send_message(message.channel, embed=em)
             
@@ -382,7 +396,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [팍씨]하셨습니다.")
          em.set_image(url="https://i.imgur.com/1lB6Nrc.png")
          await client.send_message(message.channel, embed=em)
             
@@ -392,7 +406,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [드르렁]하셨습니다.")
          em.set_image(url="https://i.imgur.com/6eyIFsR.png")
          await client.send_message(message.channel, embed=em)
             
@@ -402,7 +416,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [눈빔]하셨습니다.")
          em.set_image(url="https://i.imgur.com/0F2CEaK.png")
          await client.send_message(message.channel, embed=em)
             
@@ -412,7 +426,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [?]하셨습니다.")
          em.set_image(url="https://i.imgur.com/MmKffzi.png")
          await client.send_message(message.channel, embed=em)
             
@@ -422,7 +436,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [뒤적]하셨습니다.")
          em.set_image(url="https://i.imgur.com/zaoyKEq.png")
          await client.send_message(message.channel, embed=em)
             
@@ -432,7 +446,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [좆까]하셨습니다.")
          em.set_image(url="https://i.imgur.com/jt7EdcH.png")
          await client.send_message(message.channel, embed=em)
             
@@ -442,7 +456,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [혼란]하셨습니다.")
          em.set_image(url="https://i.imgur.com/Z8KDEWA.png")
          await client.send_message(message.channel, embed=em)
             
@@ -452,7 +466,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [대신]하셨습니다.")
          em.set_image(url="https://i.imgur.com/e0I15eD.png")
          await client.send_message(message.channel, embed=em)
             
@@ -462,7 +476,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [엠창인생]하셨습니다.")
          em.set_image(url="https://i.imgur.com/sfrk72H.png")
          await client.send_message(message.channel, embed=em)
             
@@ -472,7 +486,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [메가폰]하셨습니다.")
          em.set_image(url="https://i.imgur.com/K89E9wt.png")
          await client.send_message(message.channel, embed=em)
             
@@ -482,7 +496,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [그만]하셨습니다.")
          em.set_image(url="https://i.imgur.com/rWpC8Hw.png")
          await client.send_message(message.channel, embed=em)
             
@@ -492,7 +506,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [저기요]하셨습니다.")
          em.set_image(url="https://i.imgur.com/L5cX93M.png")
          await client.send_message(message.channel, embed=em)
             
@@ -502,17 +516,27 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [띠용]하셨습니다.")
          em.set_image(url="https://i.imgur.com/cGjjiAq.png")
          await client.send_message(message.channel, embed=em)
             
+            
+    elif message.content.startswith(';병신'):
+         em = discord.Embed()
+         async for log in client.logs_from(message.channel, limit=1):            
+             if log.author == message.author:
+                 await client.delete_message(log)
+         await client.send_message(message.channel, "<@"+id+">님이 [병신]하셨습니다.")
+         em.set_image(url="https://i.imgur.com/fgqAk3q.png")
+         await client.send_message(message.channel, embed=em)
+        
                                    
     elif message.content.startswith(';븅신'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [븅신]하셨습니다.")
          em.set_image(url="https://i.imgur.com/fgqAk3q.png")
          await client.send_message(message.channel, embed=em)
             
@@ -522,7 +546,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [별로]하셨습니다.")
          em.set_image(url="https://i.imgur.com/0BoQgnF.png")
          await client.send_message(message.channel, embed=em)
             
@@ -532,7 +556,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [안녕]하셨습니다.")
          em.set_image(url="https://i.imgur.com/ylUgE7v.png")
          await client.send_message(message.channel, embed=em)
             
@@ -542,7 +566,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [안뇽]하셨습니다.")
          em.set_image(url="https://i.imgur.com/ylUgE7v.png")
          await client.send_message(message.channel, embed=em)
             
@@ -552,7 +576,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [하이]하셨습니다.")
          em.set_image(url="https://i.imgur.com/ylUgE7v.png")
          await client.send_message(message.channel, embed=em)
             
@@ -562,7 +586,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㅎㅇ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/ylUgE7v.png")
          await client.send_message(message.channel, embed=em)
             
@@ -572,7 +596,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [한숨]하셨습니다.")
          em.set_image(url="https://i.imgur.com/fZ6JRhl.png")
          await client.send_message(message.channel, embed=em)
             
@@ -582,7 +606,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [에휴]하셨습니다.")
          em.set_image(url="https://i.imgur.com/fZ6JRhl.png")
          await client.send_message(message.channel, embed=em)
             
@@ -592,7 +616,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [친구비]하셨습니다.")
          em.set_image(url="https://i.imgur.com/SBRB8Lq.png")
          await client.send_message(message.channel, embed=em)
             
@@ -602,7 +626,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [발그레]하셨습니다.")
          em.set_image(url="https://i.imgur.com/KzLeTh9.png")
          await client.send_message(message.channel, embed=em)
             
@@ -612,7 +636,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [자살]하셨습니다.")
          em.set_image(url="https://i.imgur.com/BBnFGvh.png")
          await client.send_message(message.channel, embed=em)
             
@@ -622,7 +646,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [훌쩍]하셨습니다.")
          em.set_image(url="https://i.imgur.com/YZkpqLa.png")
          await client.send_message(message.channel, embed=em)
             
@@ -632,7 +656,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [쿠궁]하셨습니다.")
          em.set_image(url="https://i.imgur.com/BoHgLR7.png")
          await client.send_message(message.channel, embed=em)
             
@@ -642,7 +666,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [꽁꽁]하셨습니다.")
          em.set_image(url="https://i.imgur.com/xcpgEDG.png")
          await client.send_message(message.channel, embed=em)
             
@@ -652,7 +676,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [덜덜]하셨습니다.")
          em.set_image(url="https://i.imgur.com/v8nrAUE.png")
          await client.send_message(message.channel, embed=em)
             
@@ -662,7 +686,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㄷㄷ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/v8nrAUE.png")
          await client.send_message(message.channel, embed=em)
             
@@ -672,7 +696,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [엄근진]하셨습니다.")
          em.set_image(url="https://i.imgur.com/B5uAHMs.png")
          await client.send_message(message.channel, embed=em)
             
@@ -682,7 +706,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [쏘우]하셨습니다.")
          em.set_image(url="https://i.imgur.com/EsYap0a.png")
          await client.send_message(message.channel, embed=em)
             
@@ -692,7 +716,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [웃음]하셨습니다.")
          em.set_image(url="https://i.imgur.com/6oF3nQ8.png")
          await client.send_message(message.channel, embed=em)
             
@@ -702,7 +726,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㅎㅎ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/6oF3nQ8.png")
          await client.send_message(message.channel, embed=em)
             
@@ -712,7 +736,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㅋㅋ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/6oF3nQ8.png")
          await client.send_message(message.channel, embed=em)
             
@@ -722,7 +746,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [키야]하셨습니다.")
          em.set_image(url="https://i.imgur.com/HPh6DXV.png")
          await client.send_message(message.channel, embed=em)
             
@@ -732,7 +756,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [캬]하셨습니다.")
          em.set_image(url="https://i.imgur.com/HPh6DXV.png")
          await client.send_message(message.channel, embed=em)
             
@@ -742,7 +766,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [어쩔]하셨습니다.")
          em.set_image(url="https://i.imgur.com/CkyVCOB.png")
          await client.send_message(message.channel, embed=em)
             
@@ -752,7 +776,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [쯧쯧]하셨습니다.")
          em.set_image(url="https://i.imgur.com/wQr1DUJ.png")
          await client.send_message(message.channel, embed=em)
             
@@ -762,7 +786,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㅉㅉ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/wQr1DUJ.png")
          await client.send_message(message.channel, embed=em)
             
@@ -772,7 +796,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [죽창]하셨습니다.")
          em.set_image(url="https://i.imgur.com/ryqKjC1.png")
          await client.send_message(message.channel, embed=em)
             
@@ -782,7 +806,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㅂㄷ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/ryqKjC1.png")
          await client.send_message(message.channel, embed=em)
             
@@ -792,7 +816,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [절레]하셨습니다.")
          em.set_image(url="https://i.imgur.com/kTDKg5t.png")
          await client.send_message(message.channel, embed=em)
             
@@ -802,7 +826,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [와]하셨습니다.")
          em.set_image(url="https://i.imgur.com/8dWrgS6.png")
          await client.send_message(message.channel, embed=em)
             
@@ -812,7 +836,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [우와]하셨습니다.")
          em.set_image(url="https://i.imgur.com/8dWrgS6.png")
          await client.send_message(message.channel, embed=em)
             
@@ -822,7 +846,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [오아]하셨습니다.")
          em.set_image(url="https://i.imgur.com/8dWrgS6.png")
          await client.send_message(message.channel, embed=em)
             
@@ -832,7 +856,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [억울]하셨습니다.")
          em.set_image(url="https://i.imgur.com/DMYyapG.png")
          await client.send_message(message.channel, embed=em)
             
@@ -842,7 +866,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [히익]하셨습니다.")
          em.set_image(url="https://i.imgur.com/UlUikVd.png")
          await client.send_message(message.channel, embed=em)
             
@@ -852,7 +876,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [흥칫뿡]하셨습니다.")
          em.set_image(url="https://i.imgur.com/ibHZkpl.png")
          await client.send_message(message.channel, embed=em)
             
@@ -862,7 +886,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㅗ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/CQtldqK.png")
          await client.send_message(message.channel, embed=em)
             
@@ -872,7 +896,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [엿]하셨습니다.")
          em.set_image(url="https://i.imgur.com/CQtldqK.png")
          await client.send_message(message.channel, embed=em)
             
@@ -882,7 +906,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [죽일까]하셨습니다.")
          em.set_image(url="https://i.imgur.com/Q6tPMm2.png")
          await client.send_message(message.channel, embed=em)
             
@@ -892,17 +916,17 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [아몰랑]하셨습니다.")
          em.set_image(url="https://i.imgur.com/G4jcNDk.png")
          await client.send_message(message.channel, embed=em)
             
                                    
-    elif message.content.startswith(';ㅍㅍ'):
+    elif message.content.startswith(';ㅍㅅㅍ'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㅍㅅㅍ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/7S539cB.png")
          await client.send_message(message.channel, embed=em)
             
@@ -912,7 +936,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [비웃음]하셨습니다.")
          em.set_image(url="https://i.imgur.com/3dhqyVq.png")
          await client.send_message(message.channel, embed=em)
             
@@ -922,7 +946,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [피식]하셨습니다.")
          em.set_image(url="https://i.imgur.com/3dhqyVq.png")
          await client.send_message(message.channel, embed=em)
             
@@ -932,7 +956,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [빡침]하셨습니다.")
          em.set_image(url="https://i.imgur.com/5HCppyD.png")
          await client.send_message(message.channel, embed=em)
             
@@ -942,7 +966,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [지랄]하셨습니다.")
          em.set_image(url="https://i.imgur.com/A7HG6Sf.png")
          await client.send_message(message.channel, embed=em)
             
@@ -952,7 +976,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㅈㄹ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/A7HG6Sf.png")
          await client.send_message(message.channel, embed=em)
             
@@ -962,7 +986,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [레알]하셨습니다.")
          em.set_image(url="https://i.imgur.com/8CmRp3H.png")
          await client.send_message(message.channel, embed=em)
             
@@ -972,7 +996,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [ㄹㅇ]하셨습니다.")
          em.set_image(url="https://i.imgur.com/8CmRp3H.png")
          await client.send_message(message.channel, embed=em)
             
@@ -982,7 +1006,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [빼액]하셨습니다.")
          em.set_image(url="https://i.imgur.com/wi6UwCn.png")
          await client.send_message(message.channel, embed=em)
             
@@ -992,7 +1016,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [?!]하셨습니다.")
          em.set_image(url="https://i.imgur.com/dvH1YFY.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1002,7 +1026,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [팝콘]하셨습니다.")
          em.set_image(url="https://i.imgur.com/XwVApTH.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1012,7 +1036,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [팝그작]하셨습니다.")
          em.set_image(url="https://i.imgur.com/XwVApTH.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1022,7 +1046,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [박수]하셨습니다.")
          em.set_image(url="https://i.imgur.com/SG7T8bg.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1032,7 +1056,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [짝짝]하셨습니다.")
          em.set_image(url="https://i.imgur.com/SG7T8bg.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1042,7 +1066,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [따봉]하셨습니다.")
          em.set_image(url="https://i.imgur.com/8Jmtmwc.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1052,7 +1076,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [최고]하셨습니다.")
          em.set_image(url="https://i.imgur.com/8Jmtmwc.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1062,7 +1086,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [굿]하셨습니다.")
          em.set_image(url="https://i.imgur.com/8Jmtmwc.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1072,7 +1096,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [설]하셨습니다.")
          em.set_image(url="https://i.imgur.com/jFDM3WP.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1082,7 +1106,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [레]하셨습니다.")
          em.set_image(url="https://i.imgur.com/t8mYziM.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1092,7 +1116,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [여]하셨습니다.")
          em.set_image(url="https://i.imgur.com/7tCg5sG.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1102,7 +1126,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [라]하셨습니다.")
          em.set_image(url="https://i.imgur.com/vxsQSVy.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1112,7 +1136,7 @@ async def on_message(message):
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">")    
+         await client.send_message(message.channel, "<@"+id+">님이 [얍]하셨습니다.")
          em.set_image(url="https://i.imgur.com/7ekHsen.png")
          await client.send_message(message.channel, embed=em)
             
@@ -1146,7 +1170,7 @@ async def on_message(message):
          embed.add_field(name=";고인", value="https://i.imgur.com/wxLreLP.gif")
          embed.add_field(name=";사형", value="https://i.imgur.com/2nryb2B.png")
          embed.add_field(name=";칭찬", value="https://i.imgur.com/ZIJBzn3.png")
-         embed.add_field(name=";ㄹㅇ?", value="https://i.imgur.com/0JzK9VP.png")
+         embed.add_field(name=";레알?, ;ㄹㅇ?", value="https://i.imgur.com/0JzK9VP.png")
          embed.add_field(name=";갑분싸", value="https://i.imgur.com/L4JtAWo.png")
          embed.add_field(name=";충성", value="https://i.imgur.com/2Ev5w2f.png")
          embed.add_field(name=";울먹", value="https://i.imgur.com/AQmIzxk.png")
@@ -1175,7 +1199,7 @@ async def on_message(message):
          embed.add_field(name=";그만", value="https://i.imgur.com/rWpC8Hw.png")
          embed.add_field(name=";저기요", value="https://i.imgur.com/L5cX93M.png")
          embed.add_field(name=";띠용", value="https://i.imgur.com/cGjjiAq.png")
-         embed.add_field(name=";븅신", value="https://i.imgur.com/fgqAk3q.png")
+         embed.add_field(name=";병신, ;븅신", value="https://i.imgur.com/fgqAk3q.png")
          embed.add_field(name=";별로", value="https://i.imgur.com/0BoQgnF.png")
          embed.add_field(name=";안녕, ;안뇽, ;하이, ;ㅎㅇ", value="https://i.imgur.com/ylUgE7v.png")
          embed.add_field(name=";한숨, ;에휴", value="https://i.imgur.com/fZ6JRhl.png")
