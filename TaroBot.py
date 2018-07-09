@@ -113,7 +113,7 @@ async def on_message(message):
              if log.author == message.author:
                  await client.delete_message(log)
          await client.send_message(message.channel, "<@"+id+">")
-            em.set_image(url="https://i.imgur.com/zzjWOiL.png")
+         em.set_image(url="https://i.imgur.com/zzjWOiL.png")
          await client.send_message(message.channel, embed=em)
             
                                                
