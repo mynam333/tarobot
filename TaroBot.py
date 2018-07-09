@@ -58,9 +58,7 @@ async def on_message(message):
     
     
     # 이하 디시거미콘
-    
-    
-    NONSENSE_LIMIT = 1
+
     
     
     elif message.content.startswith(';야호'):
