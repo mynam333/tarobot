@@ -1011,7 +1011,7 @@ async def on_message(message):
          await client.send_message(message.channel, embed=em)
             
                                    
-    elif message.content.startswith(';?!'):
+    elif message.content.startswith(';!?'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
@@ -1243,7 +1243,7 @@ async def on_message(message):
     elif message.content.startswith(';목4'):
          embed=discord.Embed(title="`★거미콘 명령어 목록 [4/4] 페이지입니다.`", color=0xffff00)
          embed.add_field(name=";빼액", value="https://i.imgur.com/wi6UwCn.png")
-         embed.add_field(name=";?!", value="https://i.imgur.com/dvH1YFY.png")
+         embed.add_field(name=";!?", value="https://i.imgur.com/dvH1YFY.png")
          embed.add_field(name=";팝콘, ;팝그작", value="https://i.imgur.com/XwVApTH.png")
          embed.add_field(name=";박수, ;짝짝", value="https://i.imgur.com/SG7T8bg.png")
          embed.add_field(name=";따봉, ;최고, ;굿", value="https://i.imgur.com/8Jmtmwc.png")
