@@ -1096,46 +1096,6 @@ async def on_message(message):
          await client.send_message(message.channel, embed=em)
             
                                    
-    elif message.content.startswith(';설'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 [설]하셨습니다.")
-         em.set_image(url="https://i.imgur.com/jFDM3WP.png")
-         await client.send_message(message.channel, embed=em)
-            
-                                   
-    elif message.content.startswith(';레'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 [레]하셨습니다.")
-         em.set_image(url="https://i.imgur.com/t8mYziM.png")
-         await client.send_message(message.channel, embed=em)
-            
-                                   
-    elif message.content.startswith(';여'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 [여]하셨습니다.")
-         em.set_image(url="https://i.imgur.com/7tCg5sG.png")
-         await client.send_message(message.channel, embed=em)
-            
-                                   
-    elif message.content.startswith(';라'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 [라]하셨습니다.")
-         em.set_image(url="https://i.imgur.com/vxsQSVy.png")
-         await client.send_message(message.channel, embed=em)
-            
-                                   
     elif message.content.startswith(';얍'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
@@ -1145,7 +1105,16 @@ async def on_message(message):
          em.set_image(url="https://i.imgur.com/7ekHsen.png")
          await client.send_message(message.channel, embed=em)
             
-                                   
+            
+    elif message.content.startswith(';설레여라얍'):
+         em = discord.Embed()
+         async for log in client.logs_from(message.channel, limit=1):            
+             if log.author == message.author:
+                 await client.delete_message(log)
+         await client.send_message(message.channel, "<@"+id+">님이 [설레여라얍]하셨습니다.")
+         em.set_image(url="https://i.imgur.com/bzUQfDX.gif")
+         await client.send_message(message.channel, embed=em)
+            
             
          
     elif message.content.startswith(';목록'):
@@ -1252,10 +1221,7 @@ async def on_message(message):
          embed.add_field(name=";팝콘, ;팝그작", value="https://i.imgur.com/XwVApTH.png")
          embed.add_field(name=";박수, ;짝짝", value="https://i.imgur.com/SG7T8bg.png")
          embed.add_field(name=";따봉, ;최고, ;굿", value="https://i.imgur.com/8Jmtmwc.png")
-         embed.add_field(name=";설", value="https://i.imgur.com/jFDM3WP.png")
-         embed.add_field(name=";레", value="https://i.imgur.com/t8mYziM.png")
-         embed.add_field(name=";여", value="https://i.imgur.com/7tCg5sG.png")
-         embed.add_field(name=";라", value="https://i.imgur.com/vxsQSVy.png")
+         embed.add_field(name=";설레여라얍", value="https://i.imgur.com/bzUQfDX.gif")
          embed.add_field(name=";얍", value="https://i.imgur.com/7ekHsen.png")
          embed.set_footer(text="Made by 여우혼")
          await client.send_message(message.channel, embed=embed)
