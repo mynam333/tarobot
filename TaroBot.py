@@ -69,6 +69,7 @@ async def on_message(message):
         
         
         
+        
     elif message.content.startswith(';YAP'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
