@@ -58,7 +58,7 @@ async def on_message(message):
     
     # 이하 테스트용
     
-        elif message.content.startswith(';냥장콘'):
+    elif message.content.startswith(';냥장콘'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
