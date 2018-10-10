@@ -56,6 +56,16 @@ async def on_message(message):
          embed.set_footer(text="Made by 유아루")
          await client.send_message(message.channel, embed=embed)
     
+    # 이하 테스트용
+    
+        elif message.content.startswith(';냥장콘'):
+         em = discord.Embed()
+         async for log in client.logs_from(message.channel, limit=1):            
+             if log.author == message.author:
+                 await client.delete_message(log)
+         await client.send_message(message.channel, "<@"+id+">님이 [냥장]하셨습니다.")
+         em.set_image(url="http://dcimg5.dcinside.com/dccon.php?no=62b5df2be09d3ca567b1c5bc12d46b394aa3b1058c6e4d0ca41648b65feb216ed19244eb64d17b3b4069eb6ae48b63804037db938e8fcd8d7bd39df95a951378f8f1964be2")
+         await client.send_message(message.channel, embed=em)
     
     # 이하 디시거미콘
 
