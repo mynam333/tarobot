@@ -47,7 +47,7 @@ async def on_message(message):
 
 
     elif message.content.startswith('!목록'):
-         embed=discord.Embed(title="운세봇 명령어 목록입니다.", description="!타로 (오늘의 운세를 타로카드로 알아봅니다.)\n!점괘 (오늘의 운세를 오미쿠지로 알아봅니다.)\n사용가능한 거미콘은 ';목록1'~';목록4' 로 확인가능합니다.\n사용가능한 냥장콘은 '#목록' 으로 확인가능합니다.", color=0x0000ff)
+         embed=discord.Embed(title="운세봇 명령어 목록입니다.", description="!타로 (오늘의 운세를 타로카드로 알아봅니다.)\n!점괘 (오늘의 운세를 오미쿠지로 알아봅니다.)\n사용가능한 거미콘은 ';목록1'~';목록4' 로 확인가능합니다.\n사용가능한 냥장콘은 '#목록1'~'#목록2' 으로 확인가능합니다.", color=0x0000ff)
          embed.set_footer(text="Made by ")
          await client.send_message(message.channel, embed=embed)
     
@@ -1604,12 +1604,12 @@ async def on_message(message):
          await client.send_message(message.channel, embed=em)
     
                 
-    elif message.content.startswith('#탁월한집사'):
+    elif message.content.startswith('#탁월'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
                  await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 [탁월한집사]하셨습니다.")
+         await client.send_message(message.channel, "<@"+id+">님이 [탁월]하셨습니다.")
          em.set_image(url="https://i.imgur.com/g1G6rH0.png")
          await client.send_message(message.channel, embed=em)
     
@@ -1725,35 +1725,64 @@ async def on_message(message):
     
                 
     elif message.content.startswith('#목록1'):
-         embed=discord.Embed(title="`★냥장콘 명령어 목록 [1/4] 페이지입니다.`", color=0xffff00)
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
-         embed.add_field(name="#", value="")
+         embed=discord.Embed(title="`★냥장콘 명령어 목록 [1/2] 페이지입니다.`", color=0xffff00)
+         embed.add_field(name="#냥하", value="")
+         embed.add_field(name="#크으", value="")
+         embed.add_field(name="#제법", value="")
+         embed.add_field(name="#뭔솔", value="")
+         embed.add_field(name="#짜잔", value="")
+         embed.add_field(name="#집사콜", value="")
+         embed.add_field(name="#묘기증", value="")
+         embed.add_field(name="#인정", value="")
+         embed.add_field(name="#고평가", value="")
+         embed.add_field(name="#=ㅅ=", value="")
+         embed.add_field(name="#구토", value="")
+         embed.add_field(name="#안들림", value="")
+         embed.add_field(name="#이게뭐지", value="")
+         embed.add_field(name="#사죄", value="")
+         embed.add_field(name="#띠용", value="")
+         embed.add_field(name="#정도껏", value="")
+         embed.add_field(name="#뭐죠", value="")
+         embed.add_field(name="#어아니", value="")
+         embed.add_field(name="#팔불출", value="")
+         embed.add_field(name="#아니다", value="")
+         embed.add_field(name="#안해요", value="")
+         embed.add_field(name="#기분굿", value="")
+         embed.add_field(name="#냥냥", value="")
+         embed.add_field(name="#어떻게", value="")
+         embed.add_field(name="#안다", value="")
          embed.set_footer(text="Made by 여우혼")
          await client.send_message(message.channel, embed=embed)
         
+                                    
+    elif message.content.startswith('#목록2'):
+         embed=discord.Embed(title="`★냥장콘 명령어 목록 [2/2] 페이지입니다.`", color=0xffff00)
+         embed.add_field(name="#무섭", value="")
+         embed.add_field(name="#고함", value="")
+         embed.add_field(name="#인성", value="")
+         embed.add_field(name="#아니야", value="")
+         embed.add_field(name="#그런거겠지", value="")
+         embed.add_field(name="#상상속에서", value="")
+         embed.add_field(name="#하지말자", value="")
+         embed.add_field(name="#누물보", value="")
+         embed.add_field(name="#감사, #ㄳ", value="")
+         embed.add_field(name="#엥", value="")
+         embed.add_field(name="#개같아", value="")
+         embed.add_field(name="#머쓱", value="")
+         embed.add_field(name="#탁월", value="")
+         embed.add_field(name="#그러네", value="")
+         embed.add_field(name="#알고싶던", value="")
+         embed.add_field(name="#냥권침해", value="")
+         embed.add_field(name="#감동", value="")
+         embed.add_field(name="#세상흉흉", value="")
+         embed.add_field(name="#밑분동의", value="")
+         embed.add_field(name="#허어", value="")
+         embed.add_field(name="#가지마", value="")
+         embed.add_field(name="#ㅎㅎ", value="")
+         embed.add_field(name="#지금간다", value="")
+         embed.add_field(name="#대단해", value="")
+         embed.set_footer(text="Made by 여우혼")
+         await client.send_message(message.channel, embed=embed)
         
 
                                     
