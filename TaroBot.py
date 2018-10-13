@@ -1314,7 +1314,7 @@ async def on_message(message):
          await client.send_message(message.channel, embed=em)
     
                 
-    elif message.content.startswith('#=ㅅ=):
+    elif message.content.startswith('#=ㅅ='):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
