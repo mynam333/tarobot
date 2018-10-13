@@ -1344,7 +1344,7 @@ async def on_message(message):
          await client.send_message(message.channel, embed=em)
     
                 
-    elif message.content.startswith('#이게뭐지):
+    elif message.content.startswith('#이게뭐지'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
@@ -1624,7 +1624,7 @@ async def on_message(message):
          await client.send_message(message.channel, embed=em)
     
                 
-   elif message.content.startswith('#알고싶던'):
+    elif message.content.startswith('#알고싶던'):
          em = discord.Embed()
          async for log in client.logs_from(message.channel, limit=1):            
              if log.author == message.author:
