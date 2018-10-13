@@ -47,7 +47,7 @@ async def on_message(message):
 
 
     elif message.content.startswith('!목록'):
-         embed=discord.Embed(title="운세봇 명령어 목록입니다.", description="!타로 (오늘의 운세를 타로카드로 알아봅니다.)\n!점괘 (오늘의 운세를 오미쿠지로 알아봅니다.)\n사용가능한 거미콘은 ';목록1'~';목록4' 으로 확인가능합니다.\n사용가능한 냥장콘은 '#목록1'~'#목록3' 으로 확인가능합니다.", color=0x0000ff)
+         embed=discord.Embed(title="운세봇 명령어 목록입니다.", description="!타로 (오늘의 운세를 타로카드로 알아봅니다.)\n!점괘 (오늘의 운세를 오미쿠지로 알아봅니다.)\n사용가능한 거미콘은 ';목록1'~';목록4' 으로 확인가능합니다.\n사용가능한 냥장콘은 '#목록1'~'#목록4' 으로 확인가능합니다.", color=0x0000ff)
          embed.set_footer(text="Made by ")
          await client.send_message(message.channel, embed=embed)
     
@@ -2033,358 +2033,18 @@ async def on_message(message):
          await client.send_message(message.channel, embed=em)
     
                 
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
-                
-    elif message.content.startswith('#'):
-         em = discord.Embed()
-         async for log in client.logs_from(message.channel, limit=1):            
-             if log.author == message.author:
-                 await client.delete_message(log)
-         await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
-         em.set_image(url="")
-         await client.send_message(message.channel, embed=em)
-    
+    #elif message.content.startswith('#'):
+         #em = discord.Embed()
+         #async for log in client.logs_from(message.channel, limit=1):            
+             #if log.author == message.author:
+                 #await client.delete_message(log)
+         #await client.send_message(message.channel, "<@"+id+">님이 []하셨습니다.")
+         #em.set_image(url="")
+         #await client.send_message(message.channel, embed=em)
+
                 
     elif message.content.startswith('#목록1'):
-         embed=discord.Embed(title="`★냥장콘 명령어 목록 [1/3] 페이지입니다.`", color=0xffff00)
+         embed=discord.Embed(title="`★냥장콘 명령어 목록 [1/4] 페이지입니다.`", color=0xffff00)
          embed.add_field(name="#냥하", value="https://i.imgur.com/XtIUffK.png")
          embed.add_field(name="#크으", value="https://i.imgur.com/jTLBtAL.png")
          embed.add_field(name="#제법", value="https://i.imgur.com/OH9e0q9.png")
@@ -2414,7 +2074,7 @@ async def on_message(message):
         
                                     
     elif message.content.startswith('#목록2'):
-         embed=discord.Embed(title="`★냥장콘 명령어 목록 [2/3] 페이지입니다.`", color=0xffff00)
+         embed=discord.Embed(title="`★냥장콘 명령어 목록 [2/4] 페이지입니다.`", color=0xffff00)
          embed.add_field(name="#안다", value="https://i.imgur.com/MEBvcct.png")  
          embed.add_field(name="#무섭", value="https://i.imgur.com/dUDhiJ1.png")
          embed.add_field(name="#고함", value="https://i.imgur.com/IpColS1.png")
@@ -2444,7 +2104,7 @@ async def on_message(message):
         
         
     elif message.content.startswith('#목록3'):
-         embed=discord.Embed(title="`★냥장콘 명령어 목록 [3/3] 페이지입니다.`", color=0xffff00)
+         embed=discord.Embed(title="`★냥장콘 명령어 목록 [3/4] 페이지입니다.`", color=0xffff00)
          embed.add_field(name="#대단해", value="https://i.imgur.com/RD5H2iW.png")
          embed.add_field(name="#외모열일", value="https://i.imgur.com/zTeE6Fb.png") 
          embed.add_field(name="#혼모노", value="https://i.imgur.com/okZPeKc.png")
@@ -2471,7 +2131,19 @@ async def on_message(message):
          embed.add_field(name="#히익", value="https://i.imgur.com/D8LRkUA.png")
          embed.set_footer(text="Made by 여우혼")
          await client.send_message(message.channel, embed=embed)
+                
         
+    elif message.content.startswith('#목록4'):
+         embed=discord.Embed(title="`★냥장콘 명령어 목록 [4/4] 페이지입니다.`", color=0xffff00)
+         embed.add_field(name="#대만족", value="https://i.imgur.com/Zf96hqZ.png")
+         embed.add_field(name="#쿵쾅", value="https://i.imgur.com/zNmGAHk.png") 
+         embed.add_field(name="#핫산", value="https://i.imgur.com/XPiqCkC.png")
+         embed.add_field(name="#극혐", value="https://i.imgur.com/bvtYVJe.png")
+         embed.add_field(name="#관종", value="https://i.imgur.com/23nxehM.png")
+         embed.add_field(name="#핥", value="https://i.imgur.com/aoWmKA4.png")
+         #embed.add_field(name="#", value="")
+         embed.set_footer(text="Made by 여우혼")
+         await client.send_message(message.channel, embed=embed)
 
 
 
