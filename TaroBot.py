@@ -1221,7 +1221,7 @@ async def on_message(message):
          
             
             
-#이하 냥장콘
+    #이하 냥장콘
 
 
     elif message.content.startswith('#냥하'):
@@ -1785,7 +1785,6 @@ async def on_message(message):
          await client.send_message(message.channel, embed=embed)
         
 
-                                    
 
 
 client.run(token)
