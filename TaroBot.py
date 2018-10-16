@@ -1225,7 +1225,8 @@ async def on_message(message):
          embed.add_field(name=";따봉, ;최고, ;굿", value="https://i.imgur.com/8Jmtmwc.png")
          embed.add_field(name=";설레여라얍", value="https://i.imgur.com/bzUQfDX.gif")
          embed.add_field(name=";얍", value="https://i.imgur.com/7ekHsen.png")
-        
+         embed.set_footer(text="Made by 여우혼")
+         await client.send_message(message.channel, embed=embed)
         
          
             
